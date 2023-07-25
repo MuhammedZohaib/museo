@@ -1,0 +1,124 @@
+.aboutSection {
+  max-width: 97%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff9e8;
+  padding: 4rem 1rem;
+  padding-top: 1rem;
+}
+.contrast {
+  color: #cc452c;
+  z-index: 999;
+}
+.absolute {
+  position: absolute;
+  opacity: 0.1;
+  top: 0;
+  width: 12ch;
+  left: 15px;
+  font-size: 2rem;
+}
+.mainHeading {
+  width: 25ch;
+  position: relative;
+  padding: 10px 2rem;
+  margin-top: 2rem;
+}
+.subHeading {
+  width: 27ch;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+.aboutSectionTypo {
+  width: 38ch;
+  margin-left: 1rem;
+  line-height: 1.5;
+  font-size: 14px;
+  border-left: 3px solid #ea4e54;
+  padding: 5px;
+}
+.CTA {
+  width: fit-content;
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  margin: 2rem;
+}
+.button {
+  display: block;
+  min-width: 12rem;
+  max-width: 14rem;
+  height: 3rem;
+  background-color: #ff725e;
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  transition: 600ms;
+}
+
+.button:hover {
+  background-color: #ff452b;
+  color: #000;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.image img {
+  width: clamp(80vw, 80%, 800px);
+  margin: 2rem 0;
+}
+.mainDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .aboutSection {
+    max-width: 100vw;
+    gap: 1rem;
+    padding-block: 5rem;
+  }
+  .mainDiv {
+    flex-direction: row;
+  }
+  .typo {
+    margin-left: clamp(1rem, 2rem, 6%);
+  }
+  .reversed {
+    flex-direction: row-reverse;
+  }
+  .image img {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: clamp(300px, 27rem, 50vw);
+  }
+  .aboutSectionTypo {
+    width: 45ch;
+    font-size: 1rem;
+  }
+  .subHeading {
+    font-size: 1.5rem;
+  }
+  .mainHeading {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .absolute {
+    text-align: center;
+    font-size: 3.2rem;
+    width: 12ch;
+    left: 2.2rem;
+    top: 3px;
+  }
+}
